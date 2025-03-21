@@ -6,7 +6,7 @@ interface OptimizedImageProps extends Omit<ImageProps, 'src'> {
 }
 
 export const OptimizedImage: React.FC<OptimizedImageProps> = ({ src, ...props }) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/ProyectoLactosa' : '';
+  const basePath = process.env.NODE_ENV === 'production' ? '/lactose' : '';
   const fullSrc = src.startsWith('/') ? `${basePath}${src}` : src;
   
   return <Image {...props} src={fullSrc} />;

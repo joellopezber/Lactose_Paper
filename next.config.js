@@ -6,8 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: "/ProyectoLactosa",
-  assetPrefix: "/ProyectoLactosa/"
+  basePath: process.env.NODE_ENV === 'production' ? '/lactose' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/lactose/' : ''
 }
 
 module.exports = nextConfig

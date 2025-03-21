@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-gray-50;
+  }
+  
+  h1 {
+    @apply text-4xl font-bold mb-6;
+  }
+  
+  h2 {
+    @apply text-3xl font-bold mb-4;
+  }
+  
+  h3 {
+    @apply text-2xl font-bold mb-3;
+  }
+  
+  h4 {
+    @apply text-xl font-bold font-serif mb-2;
+  }
+  
+  p {
+    @apply mb-4;
+  }
+  
+  a {
+    @apply text-primary-600 hover:text-primary-800 transition-colors;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply px-6 py-3 rounded-lg bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors;
+  }
+  
+  .btn-sm {
+    @apply px-4 py-2 rounded-lg font-medium text-sm transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-600 hover:bg-secondary-700 focus:ring-secondary-500;
+  }
+  
+  .card {
+    @apply bg-white p-6 rounded-lg shadow-md;
+  }
+}
+
+/* Estilos personalizados para componentes científicos */
+.science-diagram {
+  @apply border border-gray-200 rounded-lg p-4 bg-gray-50;
+}
+
+.reference-citation {
+  @apply text-sm text-gray-600 cursor-pointer hover:underline;
+}
+
+.glossary-term {
+  @apply font-semibold border-b border-dashed border-gray-400 cursor-help;
+} 

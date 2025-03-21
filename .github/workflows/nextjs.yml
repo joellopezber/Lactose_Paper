@@ -37,12 +37,6 @@ jobs:
           node-version: "18.18.0"
           cache: 'npm'
           cache-dependency-path: webApp/package-lock.json
-      - name: Download upload-artifact action
-        run: |
-          curl -o upload-artifact.zip -L https://github.com/actions/upload-artifact/archive/refs/tags/v3.1.3.zip
-          mkdir -p $GITHUB_WORKSPACE/.github/actions/upload-artifact
-          unzip upload-artifact.zip -d $GITHUB_WORKSPACE/.github/actions/
-          echo "Downloaded upload-artifact explicitly"
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
@@ -65,10 +59,14 @@ jobs:
         run: cd webApp && npm ci
       - name: Build with Next.js
         run: cd webApp && npm run build
+      - name: Create artifact directory if it doesn't exist
+        run: mkdir -p /tmp/artifact
+      - name: Copy build output to artifact directory
+        run: cp -r ./webApp/out/* /tmp/artifact/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./webApp/out
+          path: /tmp/artifact
 
   # Deployment job
   deploy:
@@ -80,6 +78,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} 
+        uses: actions/deploy-pages@v2 

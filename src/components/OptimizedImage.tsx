@@ -1,15 +1,23 @@
-import Image, { ImageProps } from 'next/image';
 import React from 'react';
+import Image, { ImageProps } from 'next/image';
+import { getResourcePath } from '../utils/paths';
 
-interface OptimizedImageProps extends Omit<ImageProps, 'src'> {
+interface OptimizedImageProps extends ImageProps {
   src: string;
+  alt: string;
 }
 
-export const OptimizedImage: React.FC<OptimizedImageProps> = ({ src, ...props }) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/lactose' : '';
-  const fullSrc = src.startsWith('/') ? `${basePath}${src}` : src;
-  
-  return <Image {...props} src={fullSrc} />;
+const OptimizedImage: React.FC<OptimizedImageProps> = ({ src, alt, ...props }) => {
+  // Utilizamos la función de utilidad para obtener la ruta completa
+  const fullSrc = getResourcePath(src);
+
+  return (
+    <Image
+      src={fullSrc}
+      alt={alt}
+      {...props}
+    />
+  );
 };
 
 export default OptimizedImage; 

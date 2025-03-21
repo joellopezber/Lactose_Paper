@@ -19,7 +19,7 @@ const mechanisms: FisioMechanism[] = [
     id: 'digestion-lactosa',
     title: 'Digestión de la Lactosa',
     description: 'Proceso normal de hidrólisis de la lactosa por la enzima lactasa en el intestino delgado.',
-    image: '/images/mecanismos-fisiologicos/digestion_lactosa.webp',
+    image: process.env.NODE_ENV === 'production' ? '/lactose/images/mecanismos-fisiologicos/digestion_lactosa.webp' : '/images/mecanismos-fisiologicos/digestion_lactosa.webp',
     content: `
       <p>La lactosa, el principal carbohidrato presente en la leche de mamíferos, es un disacárido compuesto por una molécula de glucosa y una de galactosa. En condiciones normales, la enzima lactasa-florizina hidrolasa (LPH), conocida comúnmente como lactasa, hidroliza la lactosa en estos dos monosacáridos en el borde en cepillo de los enterocitos del intestino delgado.</p>
       
@@ -38,7 +38,7 @@ const mechanisms: FisioMechanism[] = [
     id: 'malabsorcion-fermentacion',
     title: 'Malabsorción y Fermentación Bacteriana',
     description: 'Procesos que ocurren cuando la lactosa no digerida llega al colon y es fermentada por bacterias intestinales.',
-    image: '/images/mecanismos-fisiologicos/malabsorcion_fermentacion.webp',
+    image: process.env.NODE_ENV === 'production' ? '/lactose/images/mecanismos-fisiologicos/malabsorcion_fermentacion.webp' : '/images/mecanismos-fisiologicos/malabsorcion_fermentacion.webp',
     content: `
       <p>Cuando la actividad de lactasa es insuficiente para hidrolizar toda la lactosa ingerida, este disacárido no digerido pasa al colon. En el ambiente anaeróbico del colon, la microbiota intestinal fermenta la lactosa, produciendo ácidos grasos de cadena corta (AGCC), principalmente acetato, propionato y butirato, así como gases como hidrógeno, metano y dióxido de carbono.</p>
       
@@ -57,7 +57,7 @@ const mechanisms: FisioMechanism[] = [
     id: 'efectos-osmosticos',
     title: 'Efectos Osmóticos y Motilidad Alterada',
     description: 'Cambios en el equilibrio hídrico y la motilidad intestinal causados por la lactosa no digerida y sus metabolitos.',
-    image: '/images/mecanismos-fisiologicos/efectos_osmoticos.webp',
+    image: process.env.NODE_ENV === 'production' ? '/lactose/images/mecanismos-fisiologicos/efectos_osmoticos.webp' : '/images/mecanismos-fisiologicos/efectos_osmoticos.webp',
     content: `
       <p>La lactosa no digerida y los productos de su fermentación tienen un efecto osmótico significativo, atrayendo agua hacia el lumen intestinal. Este aumento de líquido intraluminal contribuye a los síntomas de diarrea y urgencia fecal experimentados en la intolerancia a la lactosa.</p>
       
@@ -76,7 +76,7 @@ const mechanisms: FisioMechanism[] = [
     id: 'hipersensibilidad-visceral',
     title: 'Hipersensibilidad Visceral',
     description: 'Respuesta exagerada a estímulos intestinales normales que explica la variabilidad en la percepción de síntomas.',
-    image: '/images/mecanismos-fisiologicos/hipersensibilidad_visceral.webp',
+    image: process.env.NODE_ENV === 'production' ? '/lactose/images/mecanismos-fisiologicos/hipersensibilidad_visceral.webp' : '/images/mecanismos-fisiologicos/hipersensibilidad_visceral.webp',
     content: `
       <p>La hipersensibilidad visceral es un factor clave para explicar la variabilidad en la percepción de síntomas entre individuos con niveles similares de malabsorción de lactosa. Se refiere a un umbral disminuido para la percepción de estímulos dolorosos o molestos en el tracto gastrointestinal.</p>
       
@@ -95,7 +95,7 @@ const mechanisms: FisioMechanism[] = [
     id: 'respuesta-inflamatoria',
     title: 'Respuesta Inflamatoria de Bajo Grado',
     description: 'Activación leve del sistema inmune mucosal en respuesta a productos de la fermentación bacteriana.',
-    image: '/images/mecanismos-fisiologicos/respuesta_inflamatoria.webp',
+    image: process.env.NODE_ENV === 'production' ? '/lactose/images/mecanismos-fisiologicos/respuesta_inflamatoria.webp' : '/images/mecanismos-fisiologicos/respuesta_inflamatoria.webp',
     content: `
       <p>La fermentación bacteriana de la lactosa no digerida puede desencadenar una respuesta inflamatoria de bajo grado en la mucosa intestinal. Esta respuesta implica la activación de células inmunes en la lámina propia, liberación de citocinas proinflamatorias y aumento de la permeabilidad paracelular.</p>
       

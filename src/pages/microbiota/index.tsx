@@ -106,7 +106,7 @@ const MicrobiotaPage = () => {
                     <div className="relative h-80 w-full rounded-xl overflow-hidden shadow-lg border border-gray-100">
                       {activeFactor.image ? (
                         <img 
-                          src={`/images/microbiota/${activeFactor.id}.webp`}
+                          src={process.env.NODE_ENV === 'production' ? `/lactose/images/microbiota/${activeFactor.id}.webp` : `/images/microbiota/${activeFactor.id}.webp`}
                           alt={activeFactor.title}
                           className="w-full h-full object-contain"
                         />

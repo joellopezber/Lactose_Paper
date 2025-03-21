@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Layout from '@/components/Layout';
+import OptimizedImage from '@/components/OptimizedImage';
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
               {/* Imagen principal */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col items-center justify-center p-6">
                 <div className="relative w-full h-[380px]">
-                  <Image 
+                  <OptimizedImage 
                     src="/images/modelo/freepik__background__20580.png"
                     alt="Ilustración conceptual - Intolerancia a la Lactosa"
                     fill

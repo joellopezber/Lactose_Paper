@@ -1,1 +1,13 @@
-/** @type {import("next").NextConfig} */const nextConfig = {reactStrictMode: true,output: "export",images: {unoptimized: true,},basePath: process.env.NODE_ENV === "production" ? "/lactose" : "",};module.exports = nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  output: "export",
+  distDir: "out",
+  images: {
+    unoptimized: true
+  },
+  basePath: "/ProyectoLactosa",
+  assetPrefix: "/ProyectoLactosa/"
+}
+
+module.exports = nextConfig

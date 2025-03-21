@@ -242,13 +242,13 @@ const ModeloPage = () => {
                   adaptativas y la variabilidad temporal en la expresión de la intolerancia.
                 </p>
                 <Link 
-                  href="/lactose/modelo/ciclos-retroalimentacion" 
-                  className="flex items-center text-primary-600 hover:text-primary-800 transition-colors font-medium"
+                  href="/modelo/ciclos-retroalimentacion"
+                  className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition shadow-md"
                 >
-                  Ver ciclos de retroalimentación
-                  <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
                   </svg>
+                  Ver ciclos de retroalimentación
                 </Link>
               </div>
               
@@ -264,13 +264,13 @@ const ModeloPage = () => {
                   terapéuticas personalizadas para el manejo de la intolerancia a la lactosa.
                 </p>
                 <Link 
-                  href="/lactose/aproximaciones-terapeuticas" 
-                  className="flex items-center text-secondary-600 hover:text-secondary-800 transition-colors font-medium"
+                  href="/aproximaciones-terapeuticas"
+                  className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition shadow-md"
                 >
-                  Explorar aproximaciones terapéuticas
-                  <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
+                  Explorar aproximaciones terapéuticas
                 </Link>
               </div>
             </div>

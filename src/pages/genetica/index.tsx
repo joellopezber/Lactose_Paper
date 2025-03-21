@@ -77,7 +77,7 @@ const GeneticaPage = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/lactose/aproximaciones-terapeuticas" className="flex items-center text-primary-600 hover:text-primary-800 transition-colors">
+                      <Link href="/aproximaciones-terapeuticas" className="flex items-center text-primary-600 hover:text-primary-800 transition-colors">
                         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
@@ -168,7 +168,7 @@ const GeneticaPage = () => {
                   la naturaleza espectral de la intolerancia a la lactosa y sus manifestaciones clínicas variables.
                 </p>
                 <Link 
-                  href="/lactose/modelo/ciclos-retroalimentacion"
+                  href="/modelo/ciclos-retroalimentacion"
                   className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition shadow-md"
                 >
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

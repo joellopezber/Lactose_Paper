@@ -2,7 +2,7 @@
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
-name: Deploy Next.js site to Pages
+name: Build and Deploy Next.js App
 
 on:
   # Runs on pushes targeting the default branch
@@ -25,57 +25,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Node
+
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18.18.0"
+          node-version: '18.18.0'
           cache: 'npm'
           cache-dependency-path: webApp/package-lock.json
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-        with:
-          # Automatically configure the basePath, assetPrefix and base tag in this step
-          static_site_generator: next
-      - name: Restore cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            webApp/.next/cache
-          # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('webApp/**/package-lock.json') }}-${{ hashFiles('webApp/**.[jt]s', 'webApp/**.[jt]sx') }}
-          # If source files changed but packages didn't, rebuild from a prior cache.
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('webApp/**/package-lock.json') }}-
-      - name: Set NODE_ENV to production
-        run: |
-          echo "NODE_ENV=production" >> $GITHUB_ENV
-      - name: Install dependencies
-        run: cd webApp && npm ci
-      - name: Build with Next.js
-        run: cd webApp && npm run build
-      - name: Create artifact directory if it doesn't exist
-        run: mkdir -p /tmp/artifact
-      - name: Copy build output to artifact directory
-        run: cp -r ./webApp/out/* /tmp/artifact/
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: /tmp/artifact
 
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+      - name: Install Dependencies
+        run: cd webApp && npm ci
+
+      - name: Set NODE_ENV to production
+        run: echo "NODE_ENV=production" >> $GITHUB_ENV
+
+      - name: Build
+        run: cd webApp && npm run build
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2 
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: webApp/out
+          branch: gh-pages
+          clean: true 

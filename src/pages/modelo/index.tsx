@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Layout from '@/components/Layout';
 import MultilevelModelVisualization from '@/components/visualizations/MultilevelModelVisualization';
 import { multilevelModelData } from '@/data/multilevelModel';
+import Link from 'next/link';
 
 const ModeloPage = () => {
   const [selectedLevelId, setSelectedLevelId] = useState<string | null>(null);
@@ -240,7 +241,7 @@ const ModeloPage = () => {
                   El modelo identifica cuatro ciclos de retroalimentación clave que explican las dinámicas 
                   adaptativas y la variabilidad temporal en la expresión de la intolerancia.
                 </p>
-                <a 
+                <Link 
                   href="/modelo/ciclos-retroalimentacion" 
                   className="flex items-center text-primary-600 hover:text-primary-800 transition-colors font-medium"
                 >
@@ -248,7 +249,7 @@ const ModeloPage = () => {
                   <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                   </svg>
-                </a>
+                </Link>
               </div>
               
               <div className="bg-white p-6 rounded-xl shadow-md" style={{ borderLeft: '4px solid #ED64A6' }}>
@@ -262,7 +263,7 @@ const ModeloPage = () => {
                   Este modelo orienta hacia estrategias diagnósticas más precisas y aproximaciones 
                   terapéuticas personalizadas para el manejo de la intolerancia a la lactosa.
                 </p>
-                <a 
+                <Link 
                   href="/aproximaciones-terapeuticas" 
                   className="flex items-center text-secondary-600 hover:text-secondary-800 transition-colors font-medium"
                 >
@@ -270,7 +271,7 @@ const ModeloPage = () => {
                   <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
 import { factoresGeneticos, FactorGenetico } from '@/data/genetica/factoresGeneticos';
+import OptimizedImage from '../../components/OptimizedImage';
+import { getImagePath } from '../../utils/paths';
 
 const GeneticaPage = () => {
   const [activeFactor, setActiveFactor] = useState<FactorGenetico>(factoresGeneticos[0]);
@@ -75,7 +77,7 @@ const GeneticaPage = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/aproximaciones-terapeuticas" className="flex items-center text-primary-600 hover:text-primary-800 transition-colors">
+                      <Link href="/lactose/aproximaciones-terapeuticas" className="flex items-center text-primary-600 hover:text-primary-800 transition-colors">
                         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
@@ -103,20 +105,14 @@ const GeneticaPage = () => {
                     <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: activeFactor.content }} />
                   </div>
                   <div className="md:col-span-5">
-                    <div className="relative h-80 w-full rounded-xl overflow-hidden shadow-lg border border-gray-100">
-                      {activeFactor.image ? (
-                        <img 
-                          src={process.env.NODE_ENV === 'production' ? `/lactose/images/genetica/${activeFactor.image}` : `/images/genetica/${activeFactor.image}`}
-                          alt={activeFactor.title}
-                          className="w-full h-full object-contain"
-                        />
-                      ) : (
-                        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400">
-                          <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      )}
+                    <div className="col-md-10 mb-4">
+                      <OptimizedImage 
+                        src={getImagePath('genetica', 'genética-lactosa.webp')}
+                        alt="Genética y metabolismo de la lactosa"
+                        width={800}
+                        height={500}
+                        className="img-fluid rounded shadow"
+                      />
                     </div>
                     
                     <div className="mt-8 bg-gray-50 p-6 rounded-xl border-l-4 border-primary-500">
@@ -172,7 +168,7 @@ const GeneticaPage = () => {
                   la naturaleza espectral de la intolerancia a la lactosa y sus manifestaciones clínicas variables.
                 </p>
                 <Link 
-                  href="/modelo/ciclos-retroalimentacion"
+                  href="/lactose/modelo/ciclos-retroalimentacion"
                   className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition shadow-md"
                 >
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

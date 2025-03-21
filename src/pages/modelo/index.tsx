@@ -242,7 +242,7 @@ const ModeloPage = () => {
                   adaptativas y la variabilidad temporal en la expresión de la intolerancia.
                 </p>
                 <Link 
-                  href="/modelo/ciclos-retroalimentacion" 
+                  href="/lactose/modelo/ciclos-retroalimentacion" 
                   className="flex items-center text-primary-600 hover:text-primary-800 transition-colors font-medium"
                 >
                   Ver ciclos de retroalimentación
@@ -264,7 +264,7 @@ const ModeloPage = () => {
                   terapéuticas personalizadas para el manejo de la intolerancia a la lactosa.
                 </p>
                 <Link 
-                  href="/aproximaciones-terapeuticas" 
+                  href="/lactose/aproximaciones-terapeuticas" 
                   className="flex items-center text-primary-600 hover:text-primary-800 transition-colors font-medium"
                 >
                   Explorar aproximaciones terapéuticas

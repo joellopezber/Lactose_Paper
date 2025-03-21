@@ -265,7 +265,7 @@ const ModeloPage = () => {
                 </p>
                 <Link 
                   href="/aproximaciones-terapeuticas" 
-                  className="flex items-center text-secondary-600 hover:text-secondary-800 transition-colors font-medium"
+                  className="flex items-center text-primary-600 hover:text-primary-800 transition-colors font-medium"
                 >
                   Explorar aproximaciones terapéuticas
                   <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20">

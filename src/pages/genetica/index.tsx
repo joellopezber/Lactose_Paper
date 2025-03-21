@@ -106,7 +106,7 @@ const GeneticaPage = () => {
                     <div className="relative h-80 w-full rounded-xl overflow-hidden shadow-lg border border-gray-100">
                       {activeFactor.image ? (
                         <img 
-                          src={`/images/genetica/${activeFactor.image}`}
+                          src={process.env.NODE_ENV === 'production' ? `/lactose/images/genetica/${activeFactor.image}` : `/images/genetica/${activeFactor.image}`}
                           alt={activeFactor.title}
                           className="w-full h-full object-contain"
                         />

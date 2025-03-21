@@ -1,4 +1,12 @@
-import { FeedbackCycle } from '../components/visualizations/FeedbackCycleVisualization';
+import type { FeedbackNode, FeedbackLink } from '../components/visualizations/FeedbackCycleVisualization';
+
+interface FeedbackCycle {
+  id: string;
+  name: string;
+  description: string;
+  nodes: FeedbackNode[];
+  links: FeedbackLink[];
+}
 
 /**
  * Datos de los cuatro ciclos de retroalimentación identificados en el

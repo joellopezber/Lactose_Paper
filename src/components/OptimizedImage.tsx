@@ -9,7 +9,8 @@ interface OptimizedImageProps extends ImageProps {
 
 const OptimizedImage: React.FC<OptimizedImageProps> = ({ src, alt, ...props }) => {
   // Utilizamos la función de utilidad para obtener la ruta completa
-  const fullSrc = getResourcePath(src);
+  // Si la URL ya es una ruta completa de getImagePath, no aplicamos getResourcePath nuevamente
+  const fullSrc = src.includes('/images/') ? src : getResourcePath(src);
 
   return (
     <Image

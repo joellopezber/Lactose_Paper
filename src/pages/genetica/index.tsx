@@ -107,8 +107,8 @@ const GeneticaPage = () => {
                   <div className="md:col-span-5">
                     <div className="col-md-10 mb-4">
                       <OptimizedImage 
-                        src={getImagePath('genetica', 'genética-lactosa.webp')}
-                        alt="Genética y metabolismo de la lactosa"
+                        src={getImagePath('genetica', activeFactor.image || 'gen-lct.webp')}
+                        alt={`Ilustración de ${activeFactor.title}`}
                         width={800}
                         height={500}
                         className="img-fluid rounded shadow"

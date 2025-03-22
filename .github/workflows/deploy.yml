@@ -31,8 +31,14 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Verify output directory 🔍
+        run: ls -la out/
+
       - name: Create .nojekyll file 📄
-        run: touch out/.nojekyll
+        run: |
+          touch out/.nojekyll
+          echo "Contenido del directorio out después de crear .nojekyll:"
+          ls -la out/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4

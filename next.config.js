@@ -4,6 +4,8 @@
  */
 const nextConfig = {
   // Prefijo para rutas en producción (útil para GitHub Pages)
+  // No es necesario si estás desplegando en la raíz de tu sitio (joellopezber.github.io)
+  // Pero si estás desplegando en un subdirectorio (joellopezber.github.io/Lactose_Paper) es necesario
   basePath: process.env.NODE_ENV === 'production' ? '/Lactose_Paper' : '',
   
   // Optimización de imágenes
@@ -16,6 +18,10 @@ const nextConfig = {
   
   // Configuración para exportación estática
   output: 'export',
+
+  // Opcional: Desactivar manejo de links por defecto
+  // Útil en algunas configuraciones de GitHub Pages
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;

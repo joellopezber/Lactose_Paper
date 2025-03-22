@@ -4,7 +4,7 @@
  */
 const nextConfig = {
   // Prefijo para rutas en producción (útil para GitHub Pages)
-  basePath: process.env.NODE_ENV === 'production' ? '/lactose' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/Lactose_Paper' : '',
   
   // Optimización de imágenes
   images: {

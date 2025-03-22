@@ -78,4 +78,7 @@ Este proyecto es parte del Proyecto de Investigación sobre Intolerancia a la La
 
 ## Licencia
 
-Todos los derechos reservados © 2025 Proyecto Intolerancia a la Lactosa 
+Todos los derechos reservados © 2025 Proyecto Intolerancia a la Lactosa
+
+## Forzar despliegue
+Actualización: 22 de marzo de 2025 

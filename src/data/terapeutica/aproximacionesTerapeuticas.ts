@@ -1,4 +1,6 @@
 // Datos para la sección de Aproximaciones Terapéuticas
+import { getImagePath } from '@/utils/paths';
+
 export interface AproximacionTerapeutica {
   id: string;
   title: string;
@@ -29,7 +31,7 @@ export const aproximacionesTerapeuticas: AproximacionTerapeutica[] = [
       'Dosificación personalizada basada en biomarcadores individuales'
     ],
     evidenceLevel: 'Alta',
-    image: '/images/terapeuticas/suplementacion-enzimas.webp',
+    image: getImagePath('terapeuticas', 'suplementacion-enzimas.webp'),
     relatedTerms: ['lactasa-exogena', 'microencapsulacion', 'enzimas-fungicas', 'liberacion-controlada']
   },
   {
@@ -50,7 +52,7 @@ export const aproximacionesTerapeuticas: AproximacionTerapeutica[] = [
       'Beneficios acumulativos con uso prolongado por adaptación del ecosistema'
     ],
     evidenceLevel: 'Moderada',
-    image: '/images/terapeuticas/probioticos-especificos.webp',
+    image: getImagePath('terapeuticas', 'probioticos-especificos.webp'),
     relatedTerms: ['probioticos', 'cepas-lactoliticas', 'beta-galactosidasa-bacteriana', 'colonizacion-intestinal']
   },
   {
@@ -71,7 +73,7 @@ export const aproximacionesTerapeuticas: AproximacionTerapeutica[] = [
       'Efecto modulador gradual que requiere administración regular'
     ],
     evidenceLevel: 'Moderada',
-    image: '/images/terapeuticas/prebioticos-diferenciales.webp',
+    image: getImagePath('terapeuticas', 'prebioticos-diferenciales.webp'),
     relatedTerms: ['prebioticos', 'oligosacaridos', 'fermentacion-selectiva', 'modulacion-microbiana']
   },
   {
@@ -92,7 +94,7 @@ export const aproximacionesTerapeuticas: AproximacionTerapeutica[] = [
       'Seguimiento digital para identificar patrones y umbrales personalizados'
     ],
     evidenceLevel: 'Moderada',
-    image: '/images/terapeuticas/modulacion-dieta.webp',
+    image: getImagePath('terapeuticas', 'modulacion-dieta.webp'),
     relatedTerms: ['nutricion-precision', 'adaptacion-colonica', 'alimentos-fermentados', 'matriz-alimentaria']
   },
   {
@@ -113,7 +115,7 @@ export const aproximacionesTerapeuticas: AproximacionTerapeutica[] = [
       'Especialmente beneficioso en comorbilidades como SII'
     ],
     evidenceLevel: 'Preliminar',
-    image: '/images/terapeuticas/terapias-antiinflamatorias.webp',
+    image: getImagePath('terapeuticas', 'terapias-antiinflamatorias.webp'),
     relatedTerms: ['inflamacion-intestinal', 'polifenoles', 'barrera-intestinal', 'citocinas']
   },
   {
@@ -134,7 +136,7 @@ export const aproximacionesTerapeuticas: AproximacionTerapeutica[] = [
       'Microorganismos modificados genéticamente para degradación optimizada de lactosa'
     ],
     evidenceLevel: 'Emergente',
-    image: '/images/terapeuticas/terapias-futuras.webp',
+    image: getImagePath('terapeuticas', 'terapias-futuras.webp'),
     relatedTerms: ['epigenetica-nutricional', 'edicion-genetica', 'microorganismos-modificados', 'inmunomodulacion']
   }
 ]; 

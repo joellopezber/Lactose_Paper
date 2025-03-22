@@ -43,6 +43,12 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: out
-          clean: true 
+          branch: gh-pages # El nombre de la rama a la que desplegar
+          folder: out # La carpeta de la que se toman los archivos estáticos
+          clean: true # Limpia cualquier archivo existente en la rama de despliegue
+          clean-exclude: |
+            .nojekyll
+          commit-message: "Desplegar sitio web a GitHub Pages"
+          git-config-name: GitHub Actions
+          git-config-email: github-actions@github.com
+          single-commit: true # Sobreescribe la historia de la rama gh-pages para mantenerla limpia 

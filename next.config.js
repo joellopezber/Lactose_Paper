@@ -8,12 +8,14 @@ const nextConfig = {
   
   // Optimización de imágenes
   images: {
-    unoptimized: process.env.NODE_ENV === 'production',
+    unoptimized: true, // Desactivar API de optimización para ser compatible con la exportación estática
   },
   
   // Parámetros de compilación
   reactStrictMode: true,
-  swcMinify: true,
+  
+  // Configuración para exportación estática
+  output: 'export',
 };
 
 module.exports = nextConfig;

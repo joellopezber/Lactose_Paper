@@ -9,7 +9,7 @@
  * @returns Ruta completa con prefijo base en producción
  */
 export const getResourcePath = (path: string): string => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/lactose' : '';
+  const basePath = process.env.NODE_ENV === 'production' ? '/Lactose_Paper' : '';
   return path.startsWith('/') ? `${basePath}${path}` : path;
 };
 

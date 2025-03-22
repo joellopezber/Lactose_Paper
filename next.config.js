@@ -19,9 +19,11 @@ const nextConfig = {
   // Configuración para exportación estática
   output: 'export',
 
-  // Opcional: Desactivar manejo de links por defecto
-  // Útil en algunas configuraciones de GitHub Pages
+  // Usar trailing slash para mejorar compatibilidad con GitHub Pages
   trailingSlash: true,
+  
+  // Configuración de assetPrefix para recursos estáticos
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Lactose_Paper' : '',
 };
 
 module.exports = nextConfig;

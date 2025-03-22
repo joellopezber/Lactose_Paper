@@ -7,12 +7,17 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -40,15 +45,21 @@ jobs:
           echo "Contenido del directorio out después de crear .nojekyll:"
           ls -la out/
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          branch: gh-pages # El nombre de la rama a la que desplegar
-          folder: out # La carpeta de la que se toman los archivos estáticos
-          clean: true # Limpia cualquier archivo existente en la rama de despliegue
-          clean-exclude: |
-            .nojekyll
-          commit-message: "Desplegar sitio web a GitHub Pages"
-          git-config-name: GitHub Actions
-          git-config-email: github-actions@github.com
-          single-commit: true # Sobreescribe la historia de la rama gh-pages para mantenerla limpia 
+          path: './out'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2 

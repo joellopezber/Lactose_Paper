@@ -49,7 +49,7 @@ const DescargasPage = () => {
                 </div>
                 
                 <a 
-                  href="/documents/modelo_comprensivo_lactosa.pdf" 
+                  href="/documents/IntoleranciaLactosa_ModeloComprensivo_integracin_multidimens.pdf" 
                   target="_blank"
                   rel="noopener noreferrer" 
                   className="inline-flex items-center justify-center w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition shadow-md"

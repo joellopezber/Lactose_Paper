@@ -221,7 +221,7 @@ const InvestigacionPage = () => {
               
               <div className="flex justify-center">
                 <a 
-                  href="/documents/modelo_comprensivo_lactosa.pdf" 
+                  href="/documents/IntoleranciaLactosa_ModeloComprensivo_integracin_multidimens.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="px-8 py-4 bg-secondary-600 text-white font-semibold rounded-lg shadow-md hover:bg-secondary-700 transition-colors flex items-center"

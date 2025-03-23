@@ -1,0 +1,21 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/contacto": "pages/contacto.html",
+  "/aproximaciones-terapeuticas": "pages/aproximaciones-terapeuticas.html",
+  "/descargas": "pages/descargas.html",
+  "/glosario": "pages/glosario.html",
+  "/genetica": "pages/genetica.html",
+  "/": "pages/index.html",
+  "/investigacion": "pages/investigacion.html",
+  "/modelo/ciclos-retroalimentacion": "pages/modelo/ciclos-retroalimentacion.html",
+  "/microbiota": "pages/microbiota.html",
+  "/mecanismos-fisiologicos": "pages/mecanismos-fisiologicos.html",
+  "/modelo": "pages/modelo.html",
+  "/politica-privacidad": "pages/politica-privacidad.html",
+  "/proteccion-datos": "pages/proteccion-datos.html",
+  "/referencias": "pages/referencias.html",
+  "/recursos": "pages/recursos.html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}

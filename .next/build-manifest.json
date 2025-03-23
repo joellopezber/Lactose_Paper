@@ -1,0 +1,153 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-42372ed130431b0a.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/-8rRrImr6FQ8WU48its6o/_buildManifest.js",
+    "static/-8rRrImr6FQ8WU48its6o/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "rootMainFilesTree": {},
+  "pages": {
+    "/": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/587-fec7b292b5e05764.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/index-a78b62362f1b6fe7.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/css/ecb2ad7603c30ad6.css",
+      "static/chunks/pages/_app-9fb4de9e9e7620ad.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/pages/_error-41608b100cc61246.js"
+    ],
+    "/aproximaciones-terapeuticas": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/587-fec7b292b5e05764.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/aproximaciones-terapeuticas-58a24aa999a70aa0.js"
+    ],
+    "/contacto": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/contacto-102b5edd341e3c06.js"
+    ],
+    "/descargas": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/descargas-66562c656bdbeaf6.js"
+    ],
+    "/genetica": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/587-fec7b292b5e05764.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/genetica-626d56c3272fad02.js"
+    ],
+    "/glosario": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/glosario-03cb83fc1f40d15f.js"
+    ],
+    "/investigacion": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/investigacion-481cedbbe7a5ac76.js"
+    ],
+    "/mecanismos-fisiologicos": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/mecanismos-fisiologicos-10b41cca9f97bf02.js"
+    ],
+    "/microbiota": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/microbiota-974e48284ac453e2.js"
+    ],
+    "/modelo": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/modelo-dc26839784327e54.js"
+    ],
+    "/modelo/ciclos-retroalimentacion": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/186-4647da0174c8877b.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/modelo/ciclos-retroalimentacion-48a44360daf544ed.js"
+    ],
+    "/politica-privacidad": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/politica-privacidad-78c175e2368e040d.js"
+    ],
+    "/proteccion-datos": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/proteccion-datos-a025f90687c07c39.js"
+    ],
+    "/recursos": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/recursos-289ac7aaf8c4cc88.js"
+    ],
+    "/referencias": [
+      "static/chunks/webpack-7141ccac3804b185.js",
+      "static/chunks/framework-ee17a4c43a44d3e2.js",
+      "static/chunks/main-6357f50e9c9dec26.js",
+      "static/chunks/8-fd0c493a642e766e.js",
+      "static/chunks/842-c3148c402e6b4b39.js",
+      "static/chunks/pages/referencias-34f763fbb0d710e9.js"
+    ]
+  },
+  "ampFirstPages": []
+}

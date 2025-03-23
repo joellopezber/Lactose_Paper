@@ -309,7 +309,8 @@ const Layout = ({
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-            <p>© {new Date().getFullYear()} Proyecto Intolerancia a la Lactosa. Todos los derechos reservados.</p>
+            <p>© {new Date().getFullYear()} Proyecto Intolerancia a la Lactosa. Licencia de Uso Académico e Investigación.</p>
+            <p className="mt-2 text-sm">Esta obra está licenciada exclusivamente para uso académico y de investigación.</p>
           </div>
         </div>
       </footer>

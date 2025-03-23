@@ -78,7 +78,9 @@ Este proyecto es parte del Proyecto de Investigación sobre Intolerancia a la La
 
 ## Licencia
 
-Todos los derechos reservados © 2025 Proyecto Intolerancia a la Lactosa
+Licencia de Uso Académico e Investigación © 2025 Proyecto Intolerancia a la Lactosa
+
+Esta obra está licenciada exclusivamente para uso académico y de investigación. Se permite la reproducción, distribución y uso de este material con fines educativos, científicos y de investigación, siempre que se cite adecuadamente la fuente original. Cualquier uso comercial o con fines de lucro está estrictamente prohibido sin autorización expresa de los autores.
 
 ## Forzar despliegue
 Actualización: 22 de marzo de 2025 

@@ -6,17 +6,17 @@ import OptimizedImage from '@/components/OptimizedImage';
 export default function Home() {
   return (
     <Layout>
-      <section className="bg-gradient-to-b from-primary-50 to-white py-16">
+      <section className="bg-gradient-to-b from-primary-50 to-white py-8 sm:py-16">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
-              <h1 className="text-5xl font-bold text-gray-900 font-serif leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 font-serif leading-tight">
                 Metaanálisis Multinivel de la Intolerancia a la Lactosa
               </h1>
-              <p className="text-xl mt-6 text-gray-700">
+              <p className="text-lg sm:text-xl mt-4 sm:mt-6 text-gray-700">
                 Un nuevo paradigma que reconceptualiza la intolerancia a la lactosa como un espectro multifactorial determinado por interacciones complejas entre factores genéticos, epigenéticos, microbianos y fisiopatológicos.
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-6 sm:mt-8 flex flex-wrap gap-3 sm:gap-4">
                 <Link href="/modelo" className="btn">
                   Explorar el Modelo
                 </Link>
@@ -25,10 +25,10 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative h-[450px] rounded-lg overflow-hidden shadow-xl">
+            <div className="relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-lg overflow-hidden shadow-xl mt-6 lg:mt-0">
               {/* Imagen principal */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col items-center justify-center p-6">
-                <div className="relative w-full h-[380px]">
+                <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[380px]">
                   <OptimizedImage 
                     src="/images/modelo/freepik__background__20580.png"
                     alt="Ilustración conceptual - Intolerancia a la Lactosa"
@@ -43,11 +43,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-10 sm:py-16 bg-white">
         <div className="container-custom">
-          <h2 className="text-center mb-12">Elementos Clave del Modelo</h2>
+          <h2 className="text-center text-2xl sm:text-3xl mb-8 sm:mb-12">Elementos Clave del Modelo</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mt-8 sm:mt-12">
             <div className="card hover:shadow-lg transition-shadow">
               <div className="h-16 w-16 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mx-auto mb-6">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,34 +99,34 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="py-16 bg-gray-50">
+      <section className="py-10 sm:py-16 bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-center mb-12">Explorar por Categoría</h2>
+          <h2 className="text-center text-2xl sm:text-3xl mb-8 sm:mb-12">Explorar por Categoría</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             <Link href="/mecanismos-fisiologicos" className="block group">
-              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+              <div className="relative h-48 sm:h-60 rounded-lg overflow-hidden shadow-md">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-200 to-primary-400 group-hover:scale-105 transition-transform duration-300"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h3 className="text-2xl font-bold text-white">Mecanismos Fisiológicos</h3>
+                <div className="absolute inset-0 flex items-center justify-center p-4 text-center">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">Mecanismos Fisiológicos</h3>
                 </div>
               </div>
             </Link>
             
             <Link href="/genetica" className="block group">
-              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+              <div className="relative h-48 sm:h-60 rounded-lg overflow-hidden shadow-md">
                 <div className="absolute inset-0 bg-gradient-to-br from-secondary-200 to-secondary-400 group-hover:scale-105 transition-transform duration-300"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h3 className="text-2xl font-bold text-white">Factores Genéticos</h3>
+                <div className="absolute inset-0 flex items-center justify-center p-4 text-center">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">Factores Genéticos</h3>
                 </div>
               </div>
             </Link>
             
             <Link href="/microbiota" className="block group">
-              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+              <div className="relative h-48 sm:h-60 rounded-lg overflow-hidden shadow-md">
                 <div className="absolute inset-0 bg-gradient-to-br from-green-200 to-green-400 group-hover:scale-105 transition-transform duration-300"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h3 className="text-2xl font-bold text-white">Microbiota Intestinal</h3>
+                <div className="absolute inset-0 flex items-center justify-center p-4 text-center">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">Microbiota Intestinal</h3>
                 </div>
               </div>
             </Link>

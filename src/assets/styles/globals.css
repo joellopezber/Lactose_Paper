@@ -3,24 +3,28 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply antialiased;
+  }
+  
   body {
-    @apply text-gray-900 bg-gray-50;
+    @apply text-gray-900 bg-gray-50 text-base;
   }
   
   h1 {
-    @apply text-4xl font-bold mb-6;
+    @apply text-3xl sm:text-4xl font-bold mb-4 sm:mb-6;
   }
   
   h2 {
-    @apply text-3xl font-bold mb-4;
+    @apply text-2xl sm:text-3xl font-bold mb-3 sm:mb-4;
   }
   
   h3 {
-    @apply text-2xl font-bold mb-3;
+    @apply text-xl sm:text-2xl font-bold mb-2 sm:mb-3;
   }
   
   h4 {
-    @apply text-xl font-bold font-serif mb-2;
+    @apply text-lg sm:text-xl font-bold font-serif mb-2;
   }
   
   p {
@@ -34,15 +38,15 @@
 
 @layer components {
   .container-custom {
-    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl;
   }
   
   .btn {
-    @apply px-6 py-3 rounded-lg bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors;
+    @apply px-4 py-2 sm:px-6 sm:py-3 rounded-lg bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50;
   }
   
   .btn-sm {
-    @apply px-4 py-2 rounded-lg font-medium text-sm transition-colors;
+    @apply px-3 py-1 sm:px-4 sm:py-2 rounded-lg font-medium text-sm transition-colors;
   }
   
   .btn-secondary {
@@ -50,7 +54,7 @@
   }
   
   .card {
-    @apply bg-white p-6 rounded-lg shadow-md;
+    @apply bg-white p-4 sm:p-6 rounded-lg shadow-md;
   }
 }
 

@@ -16,9 +16,11 @@ const Layout = ({
 }: LayoutProps) => {
   const [dropdownFundamentosOpen, setDropdownFundamentosOpen] = useState(false);
   const [dropdownRecursosOpen, setDropdownRecursosOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
   const fundamentosRef = useRef<HTMLLIElement>(null);
   const recursosRef = useRef<HTMLLIElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   // Función para determinar si un enlace está activo
   const isActive = (path: string) => {
@@ -56,12 +58,16 @@ const Layout = ({
       if (recursosRef.current && !recursosRef.current.contains(event.target as Node)) {
         setDropdownRecursosOpen(false);
       }
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setMobileMenuOpen(false);
+      }
     };
 
     // Cerrar menús al cambiar de ruta
     const handleRouteChange = () => {
       setDropdownFundamentosOpen(false);
       setDropdownRecursosOpen(false);
+      setMobileMenuOpen(false);
     };
 
     // Añadir los listeners
@@ -90,7 +96,8 @@ const Layout = ({
               <span className="text-lg font-medium hidden sm:inline">Modelo Intolerancia Lactosa</span>
             </Link>
             
-            <nav>
+            {/* Navegación para desktop */}
+            <nav className="hidden md:block">
               <ul className="flex space-x-4 sm:space-x-6">
                 <li>
                   <Link 
@@ -232,6 +239,148 @@ const Layout = ({
                 </li>
               </ul>
             </nav>
+            
+            {/* Botón de menú para móviles */}
+            <button 
+              className="md:hidden block text-gray-700 p-2 focus:outline-none"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Menú"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {mobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                )}
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        {/* Menú móvil */}
+        <div 
+          ref={mobileMenuRef}
+          className={`md:hidden transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-screen' : 'max-h-0'}`}
+        >
+          <div className="container-custom py-4 bg-white border-t">
+            <ul className="space-y-4">
+              <li>
+                <Link 
+                  href="/investigacion" 
+                  className={`block py-2 ${isActive('/investigacion') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                >
+                  Investigación
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/modelo" 
+                  className={`block py-2 ${isActive('/modelo') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                >
+                  Modelo
+                </Link>
+              </li>
+              <li>
+                <button 
+                  className={`flex justify-between items-center w-full py-2 ${isFundamentosActive() ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  onClick={() => setDropdownFundamentosOpen(!dropdownFundamentosOpen)}
+                >
+                  Fundamentos
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-300 ${dropdownFundamentosOpen ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className={`mt-2 pl-4 space-y-2 border-l-2 border-gray-100 transition-all duration-200 ${dropdownFundamentosOpen ? 'block' : 'hidden'}`}>
+                  <Link 
+                    href="/mecanismos-fisiologicos" 
+                    className={`block py-2 ${isActive('/mecanismos-fisiologicos') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  >
+                    Mecanismos Fisiológicos
+                  </Link>
+                  <Link 
+                    href="/genetica" 
+                    className={`block py-2 ${isActive('/genetica') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  >
+                    Factores Genéticos
+                  </Link>
+                  <Link 
+                    href="/microbiota" 
+                    className={`block py-2 ${isActive('/microbiota') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  >
+                    Microbiota Intestinal
+                  </Link>
+                  <Link 
+                    href="/aproximaciones-terapeuticas" 
+                    className={`block py-2 ${isActive('/aproximaciones-terapeuticas') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  >
+                    Aproximaciones Terapéuticas
+                  </Link>
+                  <Link 
+                    href="/modelo/ciclos-retroalimentacion" 
+                    className={`block py-2 ${isActive('/modelo/ciclos-retroalimentacion') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  >
+                    Ciclos de Retroalimentación
+                  </Link>
+                </div>
+              </li>
+              <li>
+                <button 
+                  className={`flex justify-between items-center w-full py-2 ${isRecursosActive() ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  onClick={() => setDropdownRecursosOpen(!dropdownRecursosOpen)}
+                >
+                  Información
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-300 ${dropdownRecursosOpen ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className={`mt-2 pl-4 space-y-2 border-l-2 border-gray-100 transition-all duration-200 ${dropdownRecursosOpen ? 'block' : 'hidden'}`}>
+                  <Link 
+                    href="/glosario" 
+                    className={`block py-2 ${isActive('/glosario') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  >
+                    Glosario Científico
+                  </Link>
+                  <Link 
+                    href="/referencias" 
+                    className={`block py-2 ${isActive('/referencias') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  >
+                    Referencias Bibliográficas
+                  </Link>
+                  <Link 
+                    href="/descargas" 
+                    className={`block py-2 ${isActive('/descargas') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                  >
+                    Descargar Artículo
+                  </Link>
+                </div>
+              </li>
+              <li>
+                <Link 
+                  href="/recursos" 
+                  className={`block py-2 ${isActive('/recursos') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                >
+                  Centro de Recursos
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/contacto" 
+                  className={`block py-2 ${isActive('/contacto') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
+                >
+                  Contacto
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </header>

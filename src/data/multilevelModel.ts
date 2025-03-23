@@ -7,7 +7,7 @@ import { ModelLevel } from '../components/visualizations/MultilevelModelVisualiz
 export const multilevelModelData: ModelLevel[] = [
   {
     id: 'evolutionary-genetic',
-    name: 'Nivel Genético-Evolutivo',
+    name: 'Genético-Evolutivo',
     description: 'Comprende los determinantes genéticos de la persistencia/no persistencia de lactasa y el contexto evolutivo de su selección en diferentes poblaciones humanas.',
     color: '#4299E1', // Azul
     factors: [
@@ -50,7 +50,7 @@ export const multilevelModelData: ModelLevel[] = [
   },
   {
     id: 'epigenetic-regulatory',
-    name: 'Nivel Epigenético-Regulatorio',
+    name: 'Epigenético-Regulatorio',
     description: 'Abarca los mecanismos de regulación epigenética que modulan la expresión del gen LCT, incluyendo metilación del ADN y modificaciones de histonas.',
     color: '#9F7AEA', // Púrpura
     factors: [
@@ -93,7 +93,7 @@ export const multilevelModelData: ModelLevel[] = [
   },
   {
     id: 'microbiome-interaction',
-    name: 'Nivel Microbioma-Interacciones',
+    name: 'Microbioma-Interacciones',
     description: 'Engloba las interacciones bidireccionales entre la microbiota intestinal y el metabolismo de la lactosa, incluyendo adaptación microbiana y producción de metabolitos.',
     color: '#48BB78', // Verde
     factors: [
@@ -143,7 +143,7 @@ export const multilevelModelData: ModelLevel[] = [
   },
   {
     id: 'physiopathological',
-    name: 'Nivel Fisiopatológico',
+    name: 'Fisiopatológico',
     description: 'Comprende los mecanismos fisiológicos alterados en la intolerancia a la lactosa y la manifestación de síntomas clínicos, incluyendo procesos inflamatorios y motilidad intestinal.',
     color: '#F56565', // Rojo
     factors: [
@@ -193,7 +193,7 @@ export const multilevelModelData: ModelLevel[] = [
   },
   {
     id: 'systemic-integration',
-    name: 'Nivel de Integración Sistémica',
+    name: 'de Integración Sistémica',
     description: 'Contempla las interacciones entre la intolerancia a la lactosa y otros sistemas corporales, incluyendo el eje intestino-cerebro y efectos metabólicos sistémicos.',
     color: '#ED8936', // Naranja
     factors: [
@@ -236,7 +236,7 @@ export const multilevelModelData: ModelLevel[] = [
   },
   {
     id: 'therapeutic-approaches',
-    name: 'Nivel de Aproximaciones Terapéuticas',
+    name: 'de Aproximaciones Terapéuticas',
     description: 'Abarca las estrategias de intervención para el manejo de la intolerancia a la lactosa, basadas en la comprensión de los niveles anteriores del modelo.',
     color: '#667EEA', // Índigo
     factors: [

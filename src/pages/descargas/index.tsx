@@ -1,8 +1,12 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
+import { getResourcePath } from '@/utils/paths';
 
 const DescargasPage = () => {
+  // Ruta del PDF usando la función getResourcePath
+  const pdfPath = getResourcePath('/documents/IntoleranciaLactosa_ModeloComprensivo_integracin_multidimens.pdf');
+  
   return (
     <Layout
       title="Descargas | Intolerancia a la Lactosa"
@@ -49,7 +53,7 @@ const DescargasPage = () => {
                 </div>
                 
                 <a 
-                  href="/documents/IntoleranciaLactosa_ModeloComprensivo_integracin_multidimens.pdf" 
+                  href={pdfPath} 
                   target="_blank"
                   rel="noopener noreferrer" 
                   className="inline-flex items-center justify-center w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition shadow-md"

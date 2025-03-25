@@ -9,8 +9,7 @@
  * @returns Ruta completa del recurso
  */
 export const getResourcePath = (path: string): string => {
-  // Next.js maneja automáticamente el basePath configurado en next.config.js
-  // Solo necesitamos asegurarnos que la ruta comience con /
+  // Simplemente normalizamos la ruta, el imageLoader se encargará del basePath
   return path.startsWith('/') ? path : `/${path}`;
 };
 

@@ -35,6 +35,7 @@ export default function Home() {
                     fill
                     style={{ objectFit: 'contain' }}
                     priority
+                    unoptimized={true}
                   />
                 </div>
               </div>

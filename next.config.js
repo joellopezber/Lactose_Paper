@@ -8,11 +8,9 @@ const nextConfig = {
   // Pero si estás desplegando en un subdirectorio (joellopezber.github.io/Lactose_Paper) es necesario
   basePath: process.env.NODE_ENV === 'production' ? '/Lactose_Paper' : '',
   
-  // Optimización de imágenes
+  // Configuración simplificada para imágenes estáticas
   images: {
     unoptimized: true, // Necesario para exportación estática
-    domains: ['joellopezber.github.io'], // Permitir imágenes desde GitHub Pages
-    path: process.env.NODE_ENV === 'production' ? '/Lactose_Paper/_next/image' : '/_next/image',
     loader: 'custom',
     loaderFile: './src/utils/imageLoader.ts',
   },

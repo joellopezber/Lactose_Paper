@@ -1,15 +1,16 @@
 export default function imageLoader({ src }: { src: string }) {
-  const isProduction = process.env.NODE_ENV === 'production';
-  const basePath = isProduction ? '/Lactose_Paper' : '';
+  // Detectamos el entorno en tiempo de ejecución, no en tiempo de compilación
+  const isGitHubPages = typeof window !== 'undefined' && window.location.hostname !== 'localhost';
+  const basePath = isGitHubPages ? '/Lactose_Paper' : '';
   
   // Si la URL ya es absoluta, la devolvemos tal cual
   if (src.startsWith('http')) {
     return src;
   }
   
-  // Asegurarnos de que la ruta comience con /
-  const normalizedSrc = src.startsWith('/') ? src : `/${src}`;
+  // Eliminamos / inicial si existe, para evitar doble slash
+  const normalizedSrc = src.startsWith('/') ? src.substring(1) : src;
   
-  // Construir la URL completa
-  return `${basePath}${normalizedSrc}`;
+  // Construir la URL completa con el basePath asegurándose de que haya solo un slash
+  return `${basePath}/${normalizedSrc}`;
 } 

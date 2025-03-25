@@ -1,420 +1,584 @@
 import { BibReference } from '@/components/Referencias';
 
 /**
- * Referencias bibliográficas clave para el modelo comprensivo multinivel
- * de intolerancia a la lactosa
+ * Referencias bibliográficas del paper sobre intolerancia a la lactosa
+ * Actualizadas desde referencias.md
  */
 
 const references: BibReference[] = [
-  // Genética y Evolución
   {
-    authors: "Friedrich DC, et al.",
-    year: 2012,
-    title: "Several different lactase persistence associated alleles and high diversity of the lactase gene in the admixed Brazilian population",
-    journal: "PLoS ONE",
-    doi: "10.1371/journal.pone.0046520",
-    pmid: "23029545",
-    tags: ["genética", "evolución", "epidemiología"],
-    type: "Estudio genético poblacional",
-    population: "Brasileña (mezcla étnica)",
-    keyPoints: [
-      "Alta diversidad de alelos asociados a la persistencia de lactasa en población brasileña",
-      "Identificación de varios haplotipos distintos asociados con la persistencia de lactasa"
-    ]
+    id: "1",
+    authors: "Storhaug CL, Fosse SK, Fadnes LT",
+    year: 2017,
+    title: "Country, regional, and global estimates for lactose malabsorption in adults: a systematic review and meta-analysis",
+    journal: "Lancet Gastroenterol Hepatol",
+    volume: "2",
+    issue: "10",
+    pages: "738-746",
+    doi: "10.1016/S2468-1253(17)30154-1",
+    tags: ["epidemiología", "revisión sistemática", "meta-análisis"]
   },
   {
-    authors: "Itan Y, et al.",
+    id: "2",
+    authors: "Itan Y, Jones BL, Ingram CJE, Swallow DM, Thomas MG",
     year: 2010,
     title: "A worldwide correlation of lactase persistence phenotype and genotypes",
-    journal: "BMC Evolutionary Biology",
+    journal: "BMC Evol Biol",
+    volume: "10",
+    pages: "36",
     doi: "10.1186/1471-2148-10-36",
-    pmid: "20144208",
-    tags: ["genética", "evolución", "epidemiología"],
-    type: "Correlación genético-fenotípica",
-    keyPoints: [
-      "Correlación mundial entre fenotipos y genotipos de persistencia de lactasa",
-      "Mapeo de la distribución global de alelos asociados con persistencia de lactasa"
-    ]
+    tags: ["genética", "evolución", "epidemiología"]
   },
   {
-    authors: "Feliciano CP & Gonzales-Aspera AD",
-    year: 2021,
-    title: "Genetics of Lactose Intolerance: An Updated Review and Online Interactive World Maps of Phenotype and Genotype Frequencies",
-    journal: "Genes",
-    doi: "10.3390/genes12091466",
-    pmid: "32899182",
-    tags: ["genética", "evolución", "epidemiología", "revisión sistemática"],
-    type: "Revisión y análisis geográfico",
-    population: "Mundial",
-    keyPoints: [
-      "Revisión actualizada de la genética de la intolerancia a la lactosa",
-      "Mapas interactivos de frecuencias de fenotipos y genotipos a nivel mundial"
-    ]
-  },
-  {
-    authors: "Segurel L & Bon C",
+    id: "3",
+    authors: "Ségurel L, Bon C",
     year: 2017,
-    title: "On the Evolution of Lactase Persistence in Humans",
-    journal: "Annual Review of Genomics and Human Genetics",
+    title: "On the evolution of lactase persistence in humans",
+    journal: "Annu Rev Genomics Hum Genet",
+    volume: "18",
+    pages: "297-319",
     doi: "10.1146/annurev-genom-091416-035340",
-    pmid: "28426286",
-    tags: ["genética", "evolución", "revisión sistemática"],
-    type: "Revisión evolutiva",
-    keyPoints: [
-      "Evolución de la persistencia de lactasa en humanos",
-      "Análisis de la selección positiva que actuó sobre los alelos de persistencia de lactasa"
-    ]
+    tags: ["evolución", "genética", "revisión"]
   },
   {
-    authors: "Liebert A, et al.",
-    year: 2017,
-    title: "World-wide distributions of lactase persistence alleles and the complex effects of recombination and selection",
-    journal: "Human Genetics",
-    doi: "10.1007/s00439-017-1847-y",
-    pmid: "29063188",
-    tags: ["genética", "evolución", "epidemiología"],
-    type: "Estudio genético poblacional",
-    population: "Mundial",
-    keyPoints: [
-      "Distribución mundial de alelos de persistencia de lactasa",
-      "Efectos complejos de recombinación y selección en la evolución de la persistencia de lactasa"
-    ]
-  },
-  // Mecanismos Fisiológicos e Inflamatorios
-  {
-    authors: "Deng Y, et al.",
+    id: "4",
+    authors: "Diekmann L, Pfeiffer K, Naim HY",
     year: 2015,
-    title: "Lactose Intolerance in Adults: Biological Mechanism and Dietary Management",
-    journal: "Nutrients",
-    doi: "10.3390/nu7095380",
-    pmid: "26393648",
-    tags: ["fisiopatología", "manejo", "revisión sistemática"],
-    type: "Revisión",
-    keyPoints: [
-      "Mecanismos biológicos de la intolerancia a la lactosa",
-      "Estrategias de manejo dietético"
-    ]
+    title: "Congenital lactose intolerance is triggered by severe mutations on both alleles of the lactase gene",
+    journal: "BMC Gastroenterol",
+    volume: "15",
+    pages: "36",
+    doi: "10.1186/s12876-015-0261-y",
+    tags: ["genética", "fisiopatología"]
   },
   {
-    authors: "Fassio F, et al.",
-    year: 2018,
-    title: "Lactose Maldigestion, Malabsorption, and Intolerance: A Comprehensive Review with a Focus on Current Management and Future Perspectives",
-    journal: "Nutrients",
-    doi: "10.3390/nu10111599",
-    pmid: "30400151",
-    tags: ["fisiopatología", "diagnóstico", "tratamiento", "revisión sistemática"],
-    type: "Revisión comprensiva",
-    keyPoints: [
-      "Diferenciación entre maldigestión, malabsorción e intolerancia a la lactosa",
-      "Manejo actual y perspectivas futuras para estas condiciones"
-    ]
+    id: "5",
+    authors: "Misselwitz B, Butter M, Verbeke K, Fox MR",
+    year: 2019,
+    title: "Update on lactose malabsorption and intolerance: pathogenesis, diagnosis and clinical management",
+    journal: "Gut",
+    volume: "68",
+    issue: "11",
+    pages: "2080-2091",
+    doi: "10.1136/gutjnl-2019-318404",
+    tags: ["fisiopatología", "diagnóstico", "manejo clínico", "revisión"]
   },
   {
-    authors: "Seidita A, et al.",
-    year: 2023,
-    title: "Fecal Calprotectin in Self-Reported Milk Intolerance: Not Only Lactose Intolerance",
-    journal: "Nutrients",
-    doi: "10.3390/nu15041048",
-    tags: ["fisiopatología", "diagnóstico", "biomarcadores"],
-    type: "Estudio clínico",
-    keyPoints: [
-      "Estudio de calprotectina fecal en pacientes con intolerancia a la leche auto-reportada",
-      "Más del 50% de los pacientes mostraron valores de calprotectina fecal por encima del límite normal",
-      "Evidencia de inflamación intestinal en pacientes considerados tolerantes a la lactosa"
-    ]
+    id: "6",
+    authors: "Savaiano DA, Ritter AJ, Klaenhammer TR, James GM, Longcore AT, Chandler JR, Walker WA, Foyt HL",
+    year: 2013,
+    title: "Improving lactose digestion and symptoms of lactose intolerance with a novel galacto-oligosaccharide (RP-G28): a randomized, double-blind clinical trial",
+    journal: "Nutr J",
+    volume: "12",
+    pages: "160",
+    doi: "10.1186/1475-2891-12-160",
+    tags: ["ensayo clínico", "tratamiento", "prebióticos"]
   },
   {
-    authors: "Şimşek I",
-    year: 2011,
-    title: "Irritable bowel syndrome and other functional gastrointestinal disorders",
-    journal: "Journal of Clinical Gastroenterology",
-    doi: "10.1097/MCG.0b013e31821fbd6f",
-    tags: ["fisiopatología", "comorbilidades"],
-    type: "Revisión",
-    keyPoints: [
-      "Interrelación entre trastornos gastrointestinales funcionales e intolerancia a la lactosa",
-      "Papel de la interacción entre células inmunes intestinales y alteraciones en motilidad",
-      "Importancia de la actividad de citocinas e inflamación en la fisiopatología"
-    ]
-  },
-  // Microbiota y Fermentación Bacteriana
-  {
-    authors: "Carbonero F, et al.",
+    id: "7",
+    authors: "Usai-Satta P, Scarpa M, Oppia F, Cabras F",
     year: 2012,
-    title: "Contributions of the microbial hydrogen economy to colonic homeostasis",
-    journal: "Nature Reviews Gastroenterology & Hepatology",
-    doi: "10.1038/nrgastro.2012.85",
-    tags: ["microbioma", "fermentación bacteriana", "fisiopatología"],
-    type: "Revisión",
-    keyPoints: [
-      "Caracterización de gases colónicos como productos de la interacción entre bacterias fermentativas",
-      "Relación entre niveles de H₂, metano y sulfuro de hidrógeno con trastornos intestinales",
-      "Papel del H₂ como antioxidante y protector de la mucosa colónica"
-    ]
+    title: "Lactose malabsorption and intolerance: What should be the best clinical management?",
+    journal: "World J Gastrointest Pharmacol Ther",
+    volume: "3",
+    issue: "3",
+    pages: "29-33",
+    doi: "10.4292/wjgpt.v3.i3.29",
+    tags: ["manejo clínico", "revisión"]
   },
   {
-    authors: "Perdijk O, et al.",
-    year: 2019,
-    title: "Sialyllactose and Galactooligosaccharides Promote Epithelial Barrier Functioning and Distinctly Modulate Microbiota Composition and Short Chain Fatty Acid Production",
-    journal: "Frontiers in Immunology",
-    doi: "10.3389/fimmu.2019.00094",
-    tags: ["microbioma", "prebióticos", "barrera intestinal"],
-    type: "Estudio experimental",
-    keyPoints: [
-      "Efectos de los oligosacáridos en el funcionamiento de la barrera epitelial intestinal",
-      "Modulación de la composición microbiana y producción de ácidos grasos de cadena corta",
-      "Impacto en la comunicación inmune-epitelio"
-    ]
-  },
-  {
-    authors: "Xue H, et al.",
-    year: 2024,
-    title: "Gut microbiome and serum metabolome alterations associated with lactose intolerance (LI): a case‐control study and paired‐sample study based on the American Gut Project (AGP)",
-    journal: "mSystems",
-    doi: "10.1128/msystems.00686-23",
-    tags: ["microbioma", "metabolómica", "estudio caso-control"],
-    type: "Estudio observacional",
-    keyPoints: [
-      "Alteraciones en microbioma intestinal y metaboloma sérico",
-      "Estudio caso-control basado en el American Gut Project"
-    ]
-  },
-  {
-    authors: "Shen J, et al.",
-    year: 2025,
-    title: "Rotavirus regulates the gut microhabitat immune response through the IL-22/pSTAT3/RegIIIγ signaling pathway, leading to lactose intolerance",
-    journal: "International immunopharmacology",
-    doi: "10.1016/j.intimp.2025.114275",
-    tags: ["microbioma", "inmunología", "fisiopatología"],
-    type: "Estudio experimental",
-    keyPoints: [
-      "Rol del rotavirus en la regulación de la respuesta inmune del microhábitat intestinal",
-      "Vía de señalización IL-22/pSTAT3/RegIIIγ en intolerancia a la lactosa"
-    ]
-  },
-  {
-    authors: "Cohen A, et al.",
-    year: 2024,
-    title: "The intestinal microbiome, but not clinical aspects of inflammatory bowel disease, is impacted by lactose malabsorption compared to lactose digestion in children",
-    journal: "The American journal of clinical nutrition",
-    doi: "10.1016/j.ajcnut.2023.12.029",
-    tags: ["microbioma", "pediatría", "enfermedad inflamatoria intestinal"],
-    type: "Estudio clínico",
-    population: "Pediátrica",
-    keyPoints: [
-      "Impacto de la malabsorción de lactosa en el microbioma intestinal en niños",
-      "Comparación entre malabsorción de lactosa y digestión normal"
-    ]
-  },
-  {
-    authors: "Heianza Y, et al.",
+    id: "8",
+    authors: "Di Costanzo M, Berni Canani R",
     year: 2018,
-    title: "Gut-microbiome related LCT genotype and 2-year changes in body composition and fat distribution: the POUNDS Lost Trial",
-    journal: "International journal of obesity",
-    doi: "10.1038/s41366-018-0048-7",
-    tags: ["microbioma", "genética", "composición corporal"],
-    type: "Estudio longitudinal",
-    keyPoints: [
-      "Relación entre genotipo LCT y microbioma intestinal",
-      "Cambios en la composición corporal durante 2 años"
-    ]
+    title: "Lactose Intolerance: Common Misunderstandings",
+    journal: "Ann Nutr Metab",
+    volume: "73",
+    issue: "suppl 4",
+    pages: "30-37",
+    doi: "10.1159/000493669",
+    tags: ["revisión", "conceptos erróneos"]
   },
   {
-    authors: "Maaskant A, et al.",
-    year: 2024,
-    title: "Microbiome signature suggestive of lactose-intolerance in rhesus macaques (Macaca mulatta) with intermittent chronic diarrhea",
-    journal: "Animal microbiome",
-    doi: "10.1186/s42523-024-00269-9",
-    tags: ["microbioma", "modelo animal", "diarrea crónica"],
-    type: "Estudio experimental",
-    keyPoints: [
-      "Firma microbiana en macacos rhesus con intolerancia a la lactosa",
-      "Modelo animal para estudio de diarrea crónica intermitente"
-    ]
-  },
-  // Aspectos Epigenéticos
-  {
-    authors: "Anatskaya OV, et al.",
-    year: 2023,
-    title: "Long-Term Transcriptomic Changes and Cardiomyocyte Hyperpolyploidy after Lactose Intolerance in Neonatal Rats",
-    journal: "International Journal of Molecular Sciences",
-    doi: "10.3390/ijms24087063",
-    tags: ["epigenética", "fisiopatología"],
-    type: "Estudio experimental",
-    keyPoints: [
-      "Modelo de intolerancia a la lactosa neonatal en ratas",
-      "Alteraciones epigenéticas adquiridas en período neonatal",
-      "Extensos reordenamientos transcriptómicos asociados con intolerancia a la lactosa"
-    ]
+    id: "9",
+    authors: "Gerbault P",
+    year: 2011,
+    title: "Evolution of lactase persistence: an example of human niche construction",
+    journal: "Philos Trans R Soc Lond B Biol Sci",
+    volume: "366",
+    issue: "1566",
+    pages: "863-877",
+    doi: "10.1098/rstb.2010.0268",
+    tags: ["evolución", "genética"]
   },
   {
-    authors: "Carlberg C",
-    year: 2023,
-    title: "Nutrigenomics in the context of evolution",
-    journal: "Redox Biology",
-    doi: "10.1016/j.redox.2023.102656",
-    tags: ["epigenética", "evolución", "nutrigenómica"],
-    type: "Revisión",
-    keyPoints: [
-      "Interacción entre nutrientes y genoma humano en contexto evolutivo",
-      "Presiones evolutivas relacionadas con la transición de cazadores-recolectores a agricultores",
-      "Programación de epigenomas en fases pre y posnatales de la vida"
-    ]
+    id: "10",
+    authors: "Lukito W, Malik SG, Surono IS, Wahlqvist ML",
+    year: 2015,
+    title: "From 'lactose intolerance' to 'lactose nutrition'",
+    journal: "Asia Pac J Clin Nutr",
+    volume: "24",
+    issue: "Suppl 1",
+    pages: "S1-8",
+    doi: "10.6133/apjcn.2015.24.s1.01",
+    tags: ["nutrición", "conceptos"]
   },
   {
-    authors: "Yang J, et al.",
-    year: 2020,
-    title: "The Chromosome-Scale Genome of Melon Dissects Genetic Architecture of Important Agronomic Traits",
-    journal: "iScience",
-    doi: "10.1016/j.isci.2020.101422",
-    tags: ["epigenética", "genómica", "metabolismo"],
-    type: "Estudio genómico",
-    keyPoints: [
-      "Identificación de genes relacionados con el metabolismo de oligosacáridos",
-      "Análisis de la asociación entre transcriptoma y patrones de metilación del ADN",
-      "Regulación epigenética de la acumulación de sacarosa"
-    ]
-  },
-  // Interacciones Gen-Ambiente
-  {
-    authors: "Zhang Z, et al.",
-    year: 2021,
-    title: "Genetically Predicted Milk Intake and Risk of Neurodegenerative Diseases",
+    id: "11",
+    authors: "Szilagyi A, Ishayek N",
+    year: 2018,
+    title: "Lactose intolerance, dairy avoidance, and treatment options",
     journal: "Nutrients",
-    doi: "10.3390/nu13082893",
-    tags: ["genética", "nutrición", "enfermedades neurodegenerativas"],
-    type: "Estudio de aleatorización mendeliana",
-    keyPoints: [
-      "Asociación causal entre ingesta de leche y enfermedades neurodegenerativas",
-      "Uso de polimorfismos del gen LCT como instrumentos genéticos"
-    ]
+    volume: "10",
+    issue: "12",
+    pages: "1994",
+    doi: "10.3390/nu10121994",
+    tags: ["tratamiento", "revisión", "manejo clínico"]
   },
   {
-    authors: "Vissers LET, et al.",
-    year: 2019,
-    title: "Dairy Product Intake and Risk of Type 2 Diabetes in EPIC-InterAct: A Mendelian Randomization Study",
-    journal: "Diabetes Care",
-    doi: "10.2337/dc18-2034",
-    tags: ["genética", "nutrición", "diabetes"],
-    type: "Estudio de aleatorización mendeliana",
-    keyPoints: [
-      "Asociación entre ingesta de productos lácteos y diabetes tipo 2",
-      "Uso de variantes genéticas relacionadas con la persistencia de lactasa"
-    ]
-  },
-  // Aproximaciones Terapéuticas
-  {
-    authors: "Deng L, et al.",
-    year: 2024,
-    title: "Effects of Konjac Glucomannan and Its Oligosaccharides on Improvement of Lactose Intolerance as Gut Prebiotics",
-    journal: "ACS Omega",
-    doi: "10.1021/acsomega.4c02768",
-    tags: ["tratamiento", "prebióticos", "microbioma"],
-    type: "Estudio experimental",
-    keyPoints: [
-      "Evaluación del potencial prebiótico del glucomanano de konjac",
-      "Estudios in vitro e in vivo sobre el efecto en la fermentación colónica",
-      "Aumento de bacterias beneficiosas tras la administración"
-    ]
+    id: "12",
+    authors: "Dainese-Plichon R, et al",
+    year: 2014,
+    title: "Malabsorption et intolérance au lactose chez l'adulte",
+    journal: "Nutrition Clinique et Métabolisme",
+    volume: "28",
+    issue: "1",
+    pages: "46-51",
+    doi: "10.1016/j.nupar.2013.12.002",
+    tags: ["fisiopatología", "diagnóstico"]
   },
   {
-    authors: "Angima G, et al.",
+    id: "13",
+    authors: "Enattah NS, Sahi T, Savilahti E, Terwilliger JD, Peltonen L, Järvelä I",
+    year: 2002,
+    title: "Identification of a variant associated with adult-type hypolactasia",
+    journal: "Nat Genet",
+    volume: "30",
+    issue: "2",
+    pages: "233-7",
+    doi: "10.1038/ng826",
+    tags: ["genética", "variantes genéticas"]
+  },
+  {
+    id: "14",
+    authors: "González-Sanmiguel J, Schroeder BO, Mottawea W, Sarabia-Sainz HM, González-Córdova AF, Hernández-Mendoza A, et al",
+    year: 2022,
+    title: "Microbial and human xenometabolites affect host health and disease: a review for non-experts",
+    journal: "Gut Microbes",
+    volume: "14",
+    issue: "1",
+    pages: "2096995",
+    doi: "10.1080/19490976.2022.2096995",
+    tags: ["microbioma", "metabolismo", "revisión"]
+  },
+  {
+    id: "15",
+    authors: "Goodrich JK, Davenport ER, Beaumont M, Jackson MA, Knight R, Ober C, Spector TD, Bell JT, Clark AG, Ley RE",
+    year: 2016,
+    title: "Genetic Determinants of the Gut Microbiome in UK Twins",
+    journal: "Cell Host Microbe",
+    volume: "19",
+    issue: "5",
+    pages: "731-43",
+    doi: "10.1016/j.chom.2016.04.017",
+    tags: ["genética", "microbioma", "gemelos"]
+  },
+  {
+    id: "16",
+    authors: "Szilagyi A",
+    year: 2015,
+    title: "Adaptation to Lactose in Lactase Non Persistent People: Effects on Intolerance and the Relationship between Dairy Food Consumption and Evalution of Diseases",
+    journal: "Nutrients",
+    volume: "7",
+    issue: "8",
+    pages: "6751-79",
+    doi: "10.3390/nu7085309",
+    tags: ["adaptación", "fisiopatología", "revisión"]
+  },
+  {
+    id: "17",
+    authors: "Pawson R, Greenhalgh T, Harvey G, Walshe K",
+    year: 2005,
+    title: "Realist review--a new method of systematic review designed for complex policy interventions",
+    journal: "J Health Serv Res Policy",
+    volume: "10",
+    issue: "Suppl 1",
+    pages: "21-34",
+    doi: "10.1258/1355819054308530",
+    tags: ["metodología", "revisión sistemática"]
+  },
+  {
+    id: "18",
+    authors: "Noblit GW, Hare RD",
+    year: 1988,
+    title: "Meta-Ethnography: Synthesizing Qualitative Studies",
+    journal: "Sage Publications",
+    doi: "10.4135/9781412985000",
+    tags: ["metodología", "meta-etnografía"]
+  },
+  {
+    id: "19",
+    authors: "Wells GA, Shea B, O'Connell D, Peterson J, Welch V, Losos M, Tugwell P",
+    year: 2013,
+    title: "The Newcastle-Ottawa Scale (NOS) for assessing the quality of nonrandomised studies in meta-analyses",
+    journal: "Ottawa Hospital Research Institute",
+    tags: ["metodología", "evaluación de calidad"]
+  },
+  {
+    id: "20",
+    authors: "Tishkoff SA, Reed FA, Ranciaro A, Voight BF, Babbitt CC, Silverman JS, et al",
+    year: 2007,
+    title: "Convergent adaptation of human lactase persistence in Africa and Europe",
+    journal: "Nat Genet",
+    volume: "39",
+    issue: "1",
+    pages: "31-40",
+    doi: "10.1038/ng1946",
+    tags: ["genética", "evolución", "adaptación"]
+  },
+  {
+    id: "21",
+    authors: "Angima G, Qu Y, Park SH, Dallas DC",
     year: 2024,
     title: "Prebiotic Strategies to Manage Lactose Intolerance Symptoms",
     journal: "Nutrients",
+    volume: "16",
+    issue: "7",
+    pages: "1002",
     doi: "10.3390/nu16071002",
-    tags: ["tratamiento", "prebióticos", "manejo"],
-    type: "Revisión",
-    keyPoints: [
-      "Revisión de estrategias prebióticas para manejar síntomas",
-      "Análisis del potencial de galactooligosacáridos (GOS)",
-      "Efecto del consumo regular de pequeñas dosis de lactosa como estrategia prebiótica"
-    ]
+    tags: ["prebióticos", "tratamiento", "manejo clínico"]
   },
   {
-    authors: "Sa'aid N & Tan JS",
-    year: 2025,
-    title: "From probiotic fermentation to functional drinks: a review on fruit juices with lactic acid bacteria and prebiotics",
-    journal: "Preparative Biochemistry & Biotechnology",
-    doi: "10.1080/10826068.2025.2467441",
-    tags: ["tratamiento", "probióticos", "prebióticos", "alimentos funcionales"],
-    type: "Revisión",
-    keyPoints: [
-      "Bebidas no lácteas funcionales como alternativas",
-      "Incorporación de prebióticos en jugos de frutas",
-      "Sinergia entre prebióticos y bacterias ácido lácticas"
-    ]
+    id: "22",
+    authors: "Ranciaro A, Campbell MC, Hirbo JB, Ko WY, Froment A, Anagnostou P, et al",
+    year: 2014,
+    title: "Genetic origins of lactase persistence and the spread of pastoralism in Africa",
+    journal: "Am J Hum Genet",
+    volume: "94",
+    issue: "4",
+    pages: "496-510",
+    doi: "10.1016/j.ajhg.2014.02.009",
+    tags: ["genética", "evolución", "África"]
   },
   {
-    authors: "Oliveira LS, et al.",
-    year: 2022,
-    title: "The use of probiotics and prebiotics can enable the ingestion of dairy products by lactose intolerant individuals",
-    journal: "Clinical Nutrition",
-    doi: "10.1016/j.clnu.2022.10.003",
-    tags: ["tratamiento", "probióticos", "prebióticos", "revisión sistemática"],
-    type: "Revisión sistemática",
-    keyPoints: [
-      "Eficacia clínica de suplementos probióticos y prebióticos",
-      "Modificación de la microbiota para mejorar tolerancia",
-      "Recomendaciones para aplicación clínica"
-    ]
+    id: "23",
+    authors: "Deng L, Zhong G, Zhang D, Zhu Z, Peng Y",
+    year: 2024,
+    title: "Effects of Konjac Glucomannan and Its Oligosaccharides on Improving Lactose Intolerance as Gut Prebiotics",
+    journal: "ACS Omega",
+    volume: "9",
+    issue: "27",
+    pages: "29609-29619",
+    doi: "10.1021/acsomega.4c02768",
+    tags: ["prebióticos", "tratamiento", "oligosacáridos"]
   },
   {
-    authors: "Mysore Saiprasad S, et al.",
+    id: "24",
+    authors: "Lewinsky RH, Jensen TGK, Møller J, Stensballe A, Olsen J, Troelsen JT",
+    year: 2005,
+    title: "T-13910 DNA variant associated with lactase persistence interacts with Oct-1 and stimulates lactase promoter activity in vitro",
+    journal: "Hum Mol Genet",
+    volume: "14",
+    issue: "24",
+    pages: "3945-3953",
+    doi: "10.1093/hmg/ddi418",
+    tags: ["genética", "regulación génica", "variantes genéticas"]
+  },
+  {
+    id: "25",
+    authors: "Leseva MN, Grand RJ, Klett H, Boerries M, Busch H, Binder AM, Michels KB",
+    year: 2018,
+    title: "Differences in DNA methylation and functional expression in lactase persistent and non-persistent individuals",
+    journal: "Sci Rep",
+    volume: "8",
+    issue: "1",
+    pages: "5649",
+    doi: "10.1038/s41598-018-23957-4",
+    tags: ["epigenética", "expresión génica", "metilación"]
+  },
+  {
+    id: "26",
+    authors: "Labrie V, Buske OJ, Oh E, Jeremian R, Ptak C, Gasiūnas G, et al",
+    year: 2016,
+    title: "Lactase nonpersistence is directed by DNA-variation-dependent epigenetic aging",
+    journal: "Nat Struct Mol Biol",
+    volume: "23",
+    issue: "6",
+    pages: "566-573",
+    doi: "10.1038/nsmb.3227",
+    tags: ["epigenética", "envejecimiento", "regulación génica"]
+  },
+  {
+    id: "27",
+    authors: "Swallow DM, Troelsen JT",
+    year: 2016,
+    title: "Escape from epigenetic silencing of lactase expression is triggered by a single-nucleotide change",
+    journal: "Nat Struct Mol Biol",
+    volume: "23",
+    issue: "6",
+    pages: "505-507",
+    doi: "10.1038/nsmb.3238",
+    tags: ["epigenética", "regulación génica", "variantes genéticas"]
+  },
+  {
+    id: "28",
+    authors: "Fassio F, Facioni MS, Guagnini F",
+    year: 2018,
+    title: "Lactose Maldigestion, Malabsorption, and Intolerance: A Comprehensive Review with a Focus on Current Management and Future Perspectives",
+    journal: "Nutrients",
+    volume: "10",
+    issue: "11",
+    pages: "1599",
+    doi: "10.3390/nu10111599",
+    tags: ["diagnóstico", "manejo clínico", "revisión"]
+  },
+  {
+    id: "29",
+    authors: "Forsgård RA",
+    year: 2019,
+    title: "Lactose digestion in humans: intestinal lactase appears to be constitutive whereas the colonic microbiome is adaptable",
+    journal: "Am J Clin Nutr",
+    volume: "110",
+    issue: "2",
+    pages: "273-279",
+    doi: "10.1093/ajcn/nqz104",
+    tags: ["microbioma", "adaptación", "fisiología"]
+  },
+  {
+    id: "30",
+    authors: "Zheng X, Chu H, Cong Y, Deng Y, Long Y, Zhu Y, et al",
+    year: 2015,
+    title: "Self-reported lactose intolerance in clinic patients with functional gastrointestinal symptoms: prevalence, risk factors, and impact on food choices",
+    journal: "Neurogastroenterol Motil",
+    volume: "27",
+    issue: "8",
+    pages: "1138-1146",
+    doi: "10.1111/nmo.12602",
+    tags: ["epidemiología", "factores de riesgo", "nutrición"]
+  },
+  {
+    id: "31",
+    authors: "Bayless TM, Brown E, Paige DM",
+    year: 2017,
+    title: "Lactase Non-persistence and Lactose Intolerance",
+    journal: "Curr Gastroenterol Rep",
+    volume: "19",
+    issue: "5",
+    pages: "23",
+    doi: "10.1007/s11894-017-0558-9",
+    tags: ["fisiopatología", "diagnóstico", "revisión"]
+  },
+  {
+    id: "32",
+    authors: "Deng Y, Misselwitz B, Dai N, Fox M",
+    year: 2015,
+    title: "Lactose Intolerance in Adults: Biological Mechanism and Dietary Management",
+    journal: "Nutrients",
+    volume: "7",
+    issue: "9",
+    pages: "8020-8035",
+    doi: "10.3390/nu7095380",
+    tags: ["manejo dietético", "fisiopatología", "revisión"]
+  },
+  {
+    id: "33",
+    authors: "Savaiano DA",
+    year: 2014,
+    title: "Lactose digestion from yogurt: mechanism and relevance",
+    journal: "Am J Clin Nutr",
+    volume: "99",
+    issue: "5",
+    pages: "1251S-1255S",
+    doi: "10.3945/ajcn.113.073023",
+    tags: ["yogur", "digestión", "nutrición"]
+  },
+  {
+    id: "34",
+    authors: "Anguita-Ruiz A, Aguilera CM, Gil Á",
+    year: 2020,
+    title: "Genetics of Lactose Intolerance: An Updated Review and Online Interactive World Maps of Phenotype and Genotype Frequencies",
+    journal: "Nutrients",
+    volume: "12",
+    issue: "9",
+    pages: "2689",
+    doi: "10.3390/nu12092689",
+    tags: ["genética", "epidemiología", "mapeo global"]
+  },
+  {
+    id: "35",
+    authors: "Szilagyi A, Galiatsatos P, Xue X",
+    year: 2016,
+    title: "Systematic review and meta-analysis of lactose digestion, its impact on intolerance and nutritional effects of dairy food restriction in inflammatory bowel diseases",
+    journal: "Nutr J",
+    volume: "15",
+    issue: "1",
+    pages: "67",
+    doi: "10.1186/s12937-016-0183-8",
+    tags: ["enfermedad inflamatoria intestinal", "meta-análisis", "nutrición"]
+  },
+  {
+    id: "36",
+    authors: "Bersaglieri T, Sabeti PC, Patterson N, Vanderploeg T, Schaffner SF, Drake JA, Rhodes M, Reich DE, Hirschhorn JN",
+    year: 2004,
+    title: "Genetic signatures of strong recent positive selection at the lactase gene",
+    journal: "Am J Hum Genet",
+    volume: "74",
+    issue: "6",
+    pages: "1111-1120",
+    doi: "10.1086/421051",
+    tags: ["genética", "evolución", "selección positiva"]
+  },
+  {
+    id: "37",
+    authors: "Mysore Saiprasad S, Moreno OG, Savaiano DA",
     year: 2023,
     title: "A Narrative Review of Human Clinical Trials to Improve Lactose Digestion and Tolerance by Feeding Bifidobacteria or Galacto-Oligosacharides",
     journal: "Nutrients",
-    doi: "10.3390/nu15163559",
-    tags: ["tratamiento", "probióticos", "prebióticos", "revisión"],
-    type: "Revisión narrativa",
-    keyPoints: [
-      "Eficacia de diferentes cepas de Bifidobacteria",
-      "Evaluación de galactooligosacáridos como prebióticos",
-      "Mecanismos de acción y consideraciones clínicas"
-    ]
+    volume: "15",
+    pages: "3559",
+    doi: "10.3390/nu15153559",
+    tags: ["probióticos", "prebióticos", "ensayos clínicos"]
   },
   {
-    authors: "He M, et al.",
-    year: 1999,
-    title: "Effect of exogenous lactase on the absorption of lactose and its intolerance symptoms",
-    journal: "Wei Sheng Yan Jiu = Journal of Hygiene Research",
-    tags: ["tratamiento", "enzimas", "eficacia clínica"],
-    type: "Estudio clínico",
-    keyPoints: [
-      "Efecto de lactasa exógena en malabsorción de lactosa",
-      "Reducción significativa en excreción anormal de H₂",
-      "Disminución marcada en síntomas de intolerancia"
-    ]
+    id: "38",
+    authors: "Firrman J, Liu LS, Mahalak K, Hu W, Bittinger K, Moustafa A, et al",
+    year: 2023,
+    title: "An in Vitro Analysis of How Lactose Modifies the Gut Microbiota Structure and Function of Adults in a Donor-Independent Manner",
+    journal: "Front Nutr",
+    volume: "9",
+    pages: "1040744",
+    doi: "10.3389/fnut.2022.1040744",
+    tags: ["microbiota", "metabolismo", "in vitro"]
   },
-  // Suplementación Enzimática
   {
-    authors: "Fraile-Gutiérrez I, et al.",
+    id: "39",
+    authors: "Kuchay RAH",
+    year: 2020,
+    title: "New insights into the molecular basis of lactase non-persistence/persistence: a brief review",
+    journal: "Drug Discov Ther",
+    volume: "14",
+    issue: "1",
+    pages: "1-7",
+    doi: "10.5582/ddt.2019.01079",
+    tags: ["genética molecular", "revisión"]
+  },
+  {
+    id: "40",
+    authors: "Labrecque N, Colgan SP, Swain SD",
+    year: 2021,
+    title: "Epigenetic regulation of intestinal barrier function: Role of histone modifications in controlling epithelial gene expression",
+    journal: "Am J Physiol Cell Physiol",
+    volume: "320",
+    issue: "6",
+    pages: "C929-C939",
+    doi: "10.1152/ajpcell.00520.2020",
+    tags: ["epigenética", "barrera intestinal", "expresión génica"]
+  },
+  {
+    id: "41",
+    authors: "Bonder MJ, Kurilshikov A, Tigchelaar EF, Mujagic Z, Imhann F, Vila AV, et al",
+    year: 2016,
+    title: "The effect of host genetics on the gut microbiome",
+    journal: "Nat Genet",
+    volume: "48",
+    issue: "11",
+    pages: "1407-1412",
+    doi: "10.1038/ng.3663",
+    tags: ["genética", "microbioma", "interacción huésped-microbiota"]
+  },
+  {
+    id: "42",
+    authors: "Rivière A, Selak M, Lantin D, Leroy F, De Vuyst L",
+    year: 2016,
+    title: "Bifidobacteria and Butyrate-Producing Colon Bacteria: Importance and Strategies for Their Stimulation in the Human Gut",
+    journal: "Front Microbiol",
+    volume: "7",
+    pages: "206602",
+    doi: "10.3389/fmicb.2016.00979",
+    tags: ["microbiota", "probióticos", "butirato"]
+  },
+  {
+    id: "43",
+    authors: "Konturek PC, Brzozowski T, Konturek SJ",
+    year: 2011,
+    title: "Stress and the gut: pathophysiology, clinical consequences, diagnostic approach and treatment options",
+    journal: "J Physiol Pharmacol",
+    volume: "62",
+    issue: "6",
+    pages: "591-9",
+    pmid: "22314561",
+    tags: ["estrés", "fisiopatología", "tratamiento"]
+  },
+  {
+    id: "44",
+    authors: "Casellas F, Aparici A, Pérez MJ, Rodríguez P",
+    year: 2016,
+    title: "Perception of lactose intolerance impairs health-related quality of life",
+    journal: "Eur J Clin Nutr",
+    volume: "70",
+    issue: "9",
+    pages: "1068-1072",
+    doi: "10.1038/ejcn.2016.80",
+    tags: ["calidad de vida", "percepción", "impacto clínico"]
+  },
+  {
+    id: "45",
+    authors: "Wang L, Sinnott-Armstrong N, Wagschal A, Wark AR, Camporez JP, Perry RJ, et al",
+    year: 2020,
+    title: "A MicroRNA Linking Human Positive Selection and Metabolic Disorders",
+    journal: "Cell",
+    volume: "183",
+    issue: "3",
+    pages: "684-701",
+    doi: "10.1016/j.cell.2020.09.017",
+    tags: ["microRNA", "selección positiva", "metabolismo"]
+  },
+  {
+    id: "46",
+    authors: "Rajabloo S, Marefat E, Hassan-Zadeh V",
+    year: 2022,
+    title: "Lactase persistence phenotype and genotype in Iranian Mazani-Shahmirzadi and Afghan Hazara ethnicities",
+    journal: "Eur J Med Genet",
+    volume: "65",
+    issue: "12",
+    pages: "104656",
+    doi: "10.1016/j.ejmg.2022.104656",
+    tags: ["genética", "etnicidad", "persistencia de lactasa"]
+  },
+  {
+    id: "47",
+    authors: "Saqib S, Akram A, Halim SA, Tassaduq I",
+    year: 2023,
+    title: "Recent advances in β-galactosidase production and their therapeutic applications in lactose intolerance: A review",
+    journal: "Int J Biol Macromol",
+    volume: "245",
+    pages: "124816",
+    doi: "10.1016/j.ijbiomac.2023.124816",
+    tags: ["enzimas", "terapéutica", "revisión"]
+  },
+  {
+    id: "48",
+    authors: "Ma X, Lu Y, Stoneking M, Xu S",
+    year: 2024,
+    title: "Neanderthal adaptive introgression shaped modern human lactase persistence",
+    journal: "Proc Natl Acad Sci USA",
+    volume: "121",
+    issue: "11",
+    pages: "e2404393122",
+    doi: "10.1073/pnas.2404393122",
+    tags: ["evolución", "neandertales", "genética"]
+  },
+  {
+    id: "49",
+    authors: "Fraile-Gutiérrez I, Iglesias S, Acosta N, Revuelta J",
     year: 2024,
     title: "Chitosan-based oral hydrogel formulations of β-galactosidase to improve enzyme supplementation therapy for lactose intolerance",
-    journal: "International Journal of Biological Macromolecules",
+    journal: "Int J Biol Macromol",
+    volume: "241",
+    pages: "127755",
     doi: "10.1016/j.ijbiomac.2023.127755",
-    tags: ["tratamiento", "enzimas", "innovación terapéutica"],
-    type: "Estudio experimental",
-    keyPoints: [
-      "Desarrollo de hidrogeles híbridos de quitosano-PEG como formulación oral",
-      "Protección de la enzima en medio gástrico",
-      "Modificación de superficie para aumentar adhesión intestinal"
-    ]
-  },
-  {
-    authors: "Turner KM, et al.",
-    year: 2011,
-    title: "Stabilization of a supplemental digestive enzyme by post-translational engineering using chemically-activated polyethylene glycol",
-    journal: "Biotechnology Letters",
-    doi: "10.1007/s10529-010-0474-7",
-    tags: ["tratamiento", "enzimas", "innovación terapéutica"],
-    type: "Estudio experimental",
-    keyPoints: [
-      "Primera aplicación de PEGilación para estabilizar una enzima digestiva",
-      "La conjugación con PEG ramificado incrementa la actividad a pH bajo",
-      "Protección significativa contra pepsina y componentes proteolíticos"
-    ]
+    tags: ["terapia enzimática", "formulación", "tratamiento"]
   }
 ];
 
+// Exportar las referencias
 export default references; 

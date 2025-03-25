@@ -7,6 +7,7 @@ export interface BibReference {
   journal: string;
   year: number;
   volume?: string;
+  issue?: string;
   pages?: string;
   doi?: string;
   pmid?: string;
@@ -136,6 +137,7 @@ const Referencias: React.FC<ReferenciasProps> = ({
                 {ref.authors} ({ref.year}).{' '}
                 <span className="italic">{ref.journal}</span>
                 {ref.volume && `, ${ref.volume}`}
+                {ref.issue && `, ${ref.issue}`}
                 {ref.pages && `: ${ref.pages}`}.
                 {ref.type && <span className="ml-2 text-primary-600">• {ref.type}</span>}
                 {ref.population && <span className="ml-2 text-primary-600">• {ref.population}</span>}

@@ -17,7 +17,7 @@ const RecursosPage = () => {
         <div className="container-custom">
           <h1 className="text-4xl font-bold text-center mb-4 text-gray-800">Proyecto Desarrollado con IA</h1>
           <p className="text-xl text-center text-gray-600 max-w-3xl mx-auto mb-12">
-            Explorando el potencial de los sistemas multiagente para revolucionar la investigación científica
+            Explorando el potencial de los sistemas multiagente para la investigación científica
           </p>
           
           <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
@@ -216,6 +216,69 @@ const RecursosPage = () => {
                       contenido educativo adaptado a diferentes audiencias.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mb-10">
+              <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b pb-3">Disclaimer del Proyecto</h2>
+              
+              <div className="bg-gray-50 rounded-lg p-6 space-y-6">
+                <div>
+                  <h3 className="font-bold text-lg text-gray-800 mb-2">Naturaleza del Documento</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Este proyecto representa una versión 0.1 experimental generada principalmente mediante el uso de Cursor y modelos de
+                    lenguaje como Claude. Constituye un ejercicio exploratorio para evaluar las capacidades actuales de la IA
+                    en la generación de documentos científicos estructurados sobre intolerancia a la lactosa.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-lg text-gray-800 mb-2">Proceso de Trabajo</h3>
+                  <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                    <li>Adaptamos progresivamente un conjunto de agentes en Cursor para diferentes fines</li>
+                    <li>Realizamos intervenciones humanas puntuales para orientar el desarrollo del contenido</li>
+                    <li>No se utilizó una metodología sistemática de verificación científica completa</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-lg text-gray-800 mb-2">Limitaciones Importantes</h3>
+                  <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                    <li>Posibles imprecisiones en referencias bibliográficas y conceptos científicos</li>
+                    <li>Calidad desigual entre secciones según la eficacia de los diferentes agentes</li>
+                    <li>Ausencia de revisión por pares</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-lg text-gray-800 mb-2">Potencial de Mejora</h3>
+                  <p className="text-gray-700 leading-relaxed mb-2">
+                    Reconocemos que con herramientas complementarias y mayor intervención humana se podría:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                    <li>Humanizar significativamente el estilo de redacción</li>
+                    <li>Verificar rigurosamente la precisión científica del contenido</li>
+                    <li>Enriquecer el análisis con perspectivas más matizadas</li>
+                    <li>Corregir inconsistencias conceptuales y metodológicas</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-lg text-gray-800 mb-2">Propósito y Finalidad</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    El objetivo principal de este ejercicio ha sido explorar el potencial y las limitaciones actuales de los agentes de IA en la
+                    creación de documentos científicos estructurados, no producir un artículo científico definitivo o publicable en su estado
+                    actual. Este ejercicio fue realizado con fines educativos y experimentales.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-lg text-gray-800 mb-2">Declaración de Transparencia</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    No existen conflictos de interés financieros relacionados con este documento. Este ejercicio fue realizado con fines
+                    educativos y experimentales, sin financiamiento externo específico para el proyecto.
+                  </p>
                 </div>
               </div>
             </div>

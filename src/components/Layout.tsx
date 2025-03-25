@@ -226,7 +226,7 @@ const Layout = ({
                     href="/recursos" 
                     className={`text-gray-700 hover:text-primary-600 transition-colors ${isActive('/recursos') ? 'text-primary-600 font-medium' : ''}`}
                   >
-                    Centro de Recursos
+                    Recursos
                   </Link>
                 </li>
                 <li>
@@ -369,7 +369,7 @@ const Layout = ({
                   href="/recursos" 
                   className={`block py-2 ${isActive('/recursos') ? 'text-primary-600 font-medium' : 'text-gray-700'} hover:text-primary-600`}
                 >
-                  Centro de Recursos
+                  Recursos
                 </Link>
               </li>
               <li>
@@ -434,7 +434,7 @@ const Layout = ({
                 </li>
                 <li>
                   <Link href="/recursos" className="text-gray-400 hover:text-white transition-colors">
-                    Centro de Recursos
+                    Recursos
                   </Link>
                 </li>
               </ul>

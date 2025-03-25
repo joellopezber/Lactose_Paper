@@ -8,13 +8,14 @@ interface OptimizedImageProps extends ImageProps {
 }
 
 const OptimizedImage: React.FC<OptimizedImageProps> = ({ src, alt, ...props }) => {
-  // Siempre aplicamos getResourcePath para garantizar la ruta correcta en todos los entornos
+  // Asegurarnos de que la ruta sea absoluta para Next.js Image
   const fullSrc = getResourcePath(src);
-
+  
   return (
     <Image
       src={fullSrc}
       alt={alt}
+      loader={({ src }) => src} // Usar un loader personalizado para manejar rutas estáticas
       {...props}
     />
   );

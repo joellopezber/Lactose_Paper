@@ -10,7 +10,11 @@ const nextConfig = {
   
   // Optimización de imágenes
   images: {
-    unoptimized: true, // Desactivar API de optimización para ser compatible con la exportación estática
+    unoptimized: true, // Necesario para exportación estática
+    domains: ['joellopezber.github.io'], // Permitir imágenes desde GitHub Pages
+    path: process.env.NODE_ENV === 'production' ? '/Lactose_Paper/_next/image' : '/_next/image',
+    loader: 'custom',
+    loaderFile: './src/utils/imageLoader.ts',
   },
   
   // Parámetros de compilación

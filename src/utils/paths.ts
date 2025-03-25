@@ -3,19 +3,15 @@
  * Garantiza coherencia entre entornos de desarrollo y producción
  */
 
-// Definimos el basePath constante que corresponde al definido en next.config.js
-const BASE_PATH = '/Lactose_Paper';
-
 /**
- * Obtiene la ruta completa para un recurso incluyendo el prefijo base cuando es necesario
+ * Obtiene la ruta completa para un recurso
  * @param path - Ruta relativa del recurso
- * @returns Ruta completa con prefijo base en producción
+ * @returns Ruta completa del recurso
  */
 export const getResourcePath = (path: string): string => {
-  // Verificamos si estamos en un entorno de navegador y no en desarrollo local
-  const isGitHubPages = typeof window !== 'undefined' && window.location.hostname !== 'localhost';
-  const basePath = isGitHubPages ? BASE_PATH : '';
-  return path.startsWith('/') ? `${basePath}${path}` : path;
+  // Next.js maneja automáticamente el basePath configurado en next.config.js
+  // Solo necesitamos asegurarnos que la ruta comience con /
+  return path.startsWith('/') ? path : `/${path}`;
 };
 
 /**

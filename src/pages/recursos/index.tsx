@@ -33,7 +33,7 @@ const RecursosPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 <div className="bg-blue-50 rounded-lg p-6 text-center shadow-sm">
                   <div className="text-4xl font-bold text-primary-700 mb-2">164+</div>
-                  <p className="text-gray-700">Fuentes bibliográficas analizadas</p>
+                  <p className="text-gray-700">Fuentes bibliográficas seleccionadas</p>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-6 text-center shadow-sm">
                   <div className="text-4xl font-bold text-primary-700 mb-2">7</div>
@@ -227,7 +227,7 @@ const RecursosPage = () => {
                 <div>
                   <h3 className="font-bold text-lg text-gray-800 mb-2">Naturaleza del Documento</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Este proyecto representa una versión 0.1 experimental generada principalmente mediante el uso de Cursor y modelos de
+                    Este proyecto representa una versión 0.1 experimental generada principalmente mediante el uso de Cur-Sci (Cursor) y modelos de
                     lenguaje como Claude. Constituye un ejercicio exploratorio para evaluar las capacidades actuales de la IA
                     en la generación de documentos científicos estructurados sobre intolerancia a la lactosa.
                   </p>
@@ -236,7 +236,7 @@ const RecursosPage = () => {
                 <div>
                   <h3 className="font-bold text-lg text-gray-800 mb-2">Proceso de Trabajo</h3>
                   <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
-                    <li>Adaptamos progresivamente un conjunto de agentes en Cursor para diferentes fines</li>
+                    <li>Adaptamos progresivamente un conjunto de agentes en Cur-Sci (Cursor) para diferentes fines</li>
                     <li>Realizamos intervenciones humanas puntuales para orientar el desarrollo del contenido</li>
                     <li>No se utilizó una metodología sistemática de verificación científica completa</li>
                   </ul>
@@ -332,7 +332,7 @@ const RecursosPage = () => {
                 <p className="text-lg text-gray-700 mb-4">
                   Este proyecto demuestra el extraordinario potencial de los sistemas multiagente basados en IA para 
                   revolucionar la investigación científica. Lo que tradicionalmente requeriría meses de trabajo y un 
-                  equipo multidisciplinario de investigadores, se completó en menos de 5 horas con resultados de alta calidad.
+                  equipo multidisciplinario de investigadores, se completó en menos de 5 horas con resultados de calidad.
                 </p>
                 
                 <h4 className="font-bold text-gray-800 mb-2">Beneficios destacados:</h4>
